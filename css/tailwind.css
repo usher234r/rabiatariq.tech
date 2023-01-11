@@ -2101,6 +2101,7 @@ video {
 }
 
 .bg-homeBg {
+  background-color: #dfede7 !important;
   background-image: url('../images/background/bg-3.png');
 }
 

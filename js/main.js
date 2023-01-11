@@ -32,6 +32,29 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// this script lazy loads videos
+document.addEventListener("DOMContentLoaded", function () {
+  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    var lazyImageObserver = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach(function (image) {
+        if (image.isIntersecting) {
+          image.target.src = image.target.dataset.src;
+          image.target.classList.remove("lazy");
+          lazyImageObserver.unobserve(image.target);
+        }
+      });
+    });
+    lazyImages.forEach(function (lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  }
+});
+
 (function ($) {
   "use strict";
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

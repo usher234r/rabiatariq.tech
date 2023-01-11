@@ -333,3 +333,10 @@ input:-webkit-autofill:focus {
 .text-logo-green {
     color: #2d5641;
 }
+
+.portfolio-img {
+	width: 100%;
+	height: 200px !important;
+	object-fit: cover;
+	object-position: center;
+}

@@ -1,6 +1,6 @@
 // this script lazy loads videos
 document.addEventListener("DOMContentLoaded", function () {
-  var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+  var lazyVideos = [].slice.call(document.querySelectorAll("video.lazyvideo"));
 
   if ("IntersectionObserver" in window) {
     var lazyVideoObserver = new IntersectionObserver(function (
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
 
           video.target.load();
-          video.target.classList.remove("lazy");
+          video.target.classList.remove("lazyvideo");
           lazyVideoObserver.unobserve(video.target);
         }
       });

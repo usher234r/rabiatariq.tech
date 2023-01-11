@@ -25,15 +25,12 @@
     methods: function (e) {
       bostami.darkToLight();
       bostami.darkToLightMobile();
-      bostami.preloader_load();
-      bostami.preloader_svg();
       bostami.mobileMenu();
       bostami.setDark();
       bostami.setDark1();
       bostami.setLight();
       bostami.setLight1();
       bostami.istopeActivation();
-      bostami.preloader();
       bostami.slickActive();
     },
 

@@ -1,0 +1,2098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- common meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/logo/rt-icon.png"
+      type="image/x-icon"
+    />
+    <!--=== fontaswesome ===-->
+    <link rel="stylesheet" href="assets/fontaswesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/fontaswesome/css/fontawesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Roboto+Slab:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!--=== owl carousel css === -->
+    <link rel="stylesheet" href="css/vendor/slick.css" />
+    <!--=== jquary modal css ===-->
+    <link rel="stylesheet" href="css/vendor/jquery.modal.min.css" />
+    <!--=== main css ===-->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Rabia Tariq - Web Developer & Designer</title>
+    <script>
+      document.documentElement.classList.remove("dark");
+    </script>
+  </head>
+
+  <body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <div class="loader_line"></div>
+    </div>
+    <!-- /PRELOADER -->
+
+    <div
+      class="bg-homeBg min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full"
+    >
+      <div class="z-50">
+        <!-- container start -->
+        <div class="container">
+          <!-- header start for large screens -->
+          <header
+            class="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]"
+          >
+            <div
+              class="flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent dark:bg-black"
+            >
+              <div
+                class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5"
+              >
+                <!-- website logo -->
+                <a class="text-5xl font-semibold" href="/">
+                  <img
+                    class="h-[26px] lg:h-[32px]"
+                    src="images/logo/rt-logo-2.png"
+                    alt="logo"
+                  />
+                </a>
+                <div class="flex items-center">
+                  <!-- light and dark mode button 
+                  <button
+                    id="theme-toggle-mobile"
+                    type="button"
+                    class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2"
+                  >
+                    <i
+                      id="theme-toggle-dark-icon-mobile"
+                      class="fa-solid text-xl fa-moon hidden"
+                    ></i>
+                    <i
+                      id="theme-toggle-light-icon-mobile"
+                      class="fa-solid fa-sun text-xl hidden"
+                    ></i>
+                  </button>-->
+                  <!-- mobile toggle button -->
+                  <button
+                    id="menu-toggle"
+                    type="button"
+                    class="menu-toggle-btn"
+                  >
+                    <i
+                      id="menu-toggle-open-icon"
+                      class="fa-solid fa-bars text-xl"
+                    ></i>
+                    <i
+                      id="menu-toggle-close-icon"
+                      class="fa-solid fa-xmark text-xl hidden"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- header items two for large screens -->
+            <nav class="hidden lg:block">
+              <ul class="flex my-12">
+                <li>
+                  <a class="menu-item-two-active" href="/">
+                    <span class="mr-2 text-base">
+                      <i class="fa-solid fa-house"></i>
+                    </span>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item-two" href="#about">
+                    <span class="mr-2 text-base">
+                      <i class="fa-regular fa-user"></i>
+                    </span>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item-two" href="#resume">
+                    <span class="mr-2 text-base">
+                      <i class="fa-regular fa-file-lines"></i>
+                    </span>
+                    Resume
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item-two" href="#works">
+                    <span class="mr-2 text-base">
+                      <i class="fas fa-briefcase"></i>
+                    </span>
+                    Works
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item-two" href="#blog">
+                    <span class="mr-2 text-base">
+                      <i class="fa-brands fa-blogger"></i>
+                    </span>
+                    Blogs
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item-two" href="#contact">
+                    <span class="mr-2 text-base">
+                      <i class="fa-solid fa-address-book"></i>
+                    </span>
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <!-- light and dark mode button 
+                  <button
+                    id="theme-toggle"
+                    type="button"
+                    class="dark-light-btn w-[44px] h-[44px] ml-2"
+                  >
+                    <i
+                      id="theme-toggle-dark-icon"
+                      class="fa-solid text-xl fa-moon hidden"
+                    ></i>
+                    <i
+                      id="theme-toggle-light-icon"
+                      class="fa-solid fa-sun text-xl hidden"
+                    ></i>
+                  </button>-->
+                </li>
+              </ul>
+            </nav>
+
+            <!-- mobile menu start -->
+            <nav id="navbar" class="hidden lg:hidden">
+              <ul
+                class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]"
+              >
+                <li>
+                  <a class="mobile-menu-items-active" href="/">
+                    <span class="mr-2 text-xl">
+                      <i class="fa-solid fa-house"></i>
+                    </span>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-items" href="#about">
+                    <span class="mr-2 text-xl">
+                      <i class="fa-regular fa-user"></i>
+                    </span>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-items" href="#resume">
+                    <span class="mr-2 text-xl">
+                      <i class="fa-regular fa-file-lines"></i>
+                    </span>
+                    Resume
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-items" href="#works">
+                    <span class="mr-2 text-xl">
+                      <i class="fas fa-briefcase"></i>
+                    </span>
+                    Works
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-items" href="#blog">
+                    <span class="mr-2 text-xl">
+                      <i class="fa-brands fa-blogger"></i>
+                    </span>
+                    Blogs
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-items" href="#contact">
+                    <span class="mr-2 text-xl">
+                      <i class="fa-solid fa-address-book"></i>
+                    </span>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- mobile menu end -->
+          </header>
+          <!-- header  end -->
+
+          <!-- Home page contant start -->
+          <div
+            class="flex flex-col items-center h-[100vh] md:h-[90vh] lg:h-[80vh] xl:h-[71vh] justify-center aos-init aos-animate"
+            data-aos="fade"
+          >
+            <!-- personal image
+            <img
+              class="rounded-full w-[250px] h-[250px] 2xl:w-[280px] 2xl:h-[280px]"
+              src="images/about/pixelated.png"
+              alt="about avatar"
+            />
+             -->
+            <h1 class="mt-6 mb-1 mt-0 font-semibold dark:text-white" style="font-size: 3rem;">
+              Rabia Tariq
+            </h1>
+            <p class="mb-4 text-2xl text-[#7B7B7B]">Shopify Development Expert</p>
+            <!-- social link and social  buttons -->
+            <div class="flex space-x-3">
+              <!-- facebook link -->
+              <a
+                href="https://github.com/usher234r"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="socialbtn text-[#1773EA]">
+                  <iconify-icon icon="mdi:github"></iconify-icon>
+                </span>
+              </a>
+              <!-- twitter link -->
+              <a
+                href="https://www.fiverr.com/rabia234t?up_rollout=true"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="socialbtn text-[#1C9CEA]">
+                  <iconify-icon icon="jam:fiverr"></iconify-icon>
+                </span>
+              </a>
+              <!-- dribbble icon and link -->
+              <a
+                href="https://www.upwork.com/freelancers/~011c0cdd527d9a1830"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="socialbtn text-[#e14a84]">
+                  <iconify-icon icon="simple-icons:upwork"></iconify-icon>
+                </span>
+              </a>
+              <!-- linkedin icon and link -->
+              <a
+                href="https://www.linkedin.com/in/rabia-tariq-300540218/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="socialbtn text-[#0072b1]">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </span>
+              </a>
+            </div>
+            <!-- dowanload button -->
+            <button class="dowanload-btn">
+              <a href="#contact"> Contact Now </a>
+            </button>
+          </div>
+          <!-- Home page contant End -->
+
+          <!-- about page contant start -->
+          <section id="about" class="mb-8">
+            <div
+              class="container lg:rounded-2xl bg-white dark:bg-[#111111] px-4 sm:px-5 md:px-10 lg:px-20"
+            >
+              <div data-aos="fade" class="aos-init aos-animate">
+                <div class="py-12">
+                  <!-- about page title -->
+                  <h2 class="after-effect after:left-52 mt-12 lg:mt-0">
+                    About Me
+                  </h2>
+                  <div
+                    class="grid grid-cols-12 md:gap-10 pt-4 md:pt-[40px] items-center"
+                  >
+                    <div class="col-span-12 md:col-span-4">
+                      <!-- about me image -->
+                      <img
+                        class="w-full md:w-[330px] md:h-[400px] object-cover overflow-hidden rounded-[35px] mb-3 md:mb-0"
+                        src="images/about/avatar.jpg"
+                        alt="about image"
+                      />
+                    </div>
+                    <div class="col-span-12 md:col-span-8 space-y-2.5">
+                      <!-- who am i content  -->
+                      <div class="md:mr-12 xl:mr-16">
+                        <h3 class="text-4xl font-medium dark:text-white mb-2.5">
+                          Who am i?
+                        </h3>
+                        <p class="text-gray-lite dark:text-color-910 leading-7">
+                          A Shopify developer, who is passionate about helping
+                          ecommerce businesses succeed online. With my expertise
+                          in customizing store design, integrating third-party
+                          apps, and optimizing page speed, I am able to deliver
+                          high-performing online stores that drive customer
+                          engagement and increase sales.
+                        </p>
+                        <p
+                          class="text-gray-lite leading-7 mt-2.5 dark:text-color-910"
+                        >
+                          With over 5 years of experience in the industry, I
+                          have the skills and knowledge to take your store to
+                          the next level. Whether you're looking to revamp your
+                          existing online store or create a new one from
+                          scratch, I am here to help bring your ecommerce vision
+                          to life.
+                        </p>
+                      </div>
+
+                      <!-- personal info -->
+                      <div>
+                        <h3 class="text-4xl font-medium my-5 dark:text-white">
+                          Personal Info
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                          <div class="flex">
+                            <span
+                              class="text-logo-green dark:bg-color-990 shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 text-"
+                            >
+                              <i class="fa-solid fa-location-dot"></i>
+                            </span>
+                            <div class="space-y-1">
+                              <p
+                                class="text-xs text-gray-lite dark:text-color-910"
+                              >
+                                Location
+                              </p>
+                              <h6 class="font-medium dark:text-white">
+                                Pakistan
+                              </h6>
+                            </div>
+                          </div>
+
+                          <div class="flex">
+                            <span
+                              class="text-logo-green dark:bg-color-990 shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 text-"
+                            >
+                              <i class="fa-solid fa-envelope-open-text"></i>
+                            </span>
+                            <div class="space-y-1">
+                              <p
+                                class="text-xs text-gray-lite dark:text-color-910"
+                              >
+                                Email
+                              </p>
+                              <h6 class="font-medium dark:text-white">
+                                contact@rabiatariq.tech
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- whai i do contain -->
+                <div class="pb-12">
+                  <h3 class="text-[35px] dark:text-white font-medium pb-5">
+                    What I do!
+                  </h3>
+                  <div
+                    class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3"
+                  >
+                    <div class="about-box dark:bg-transparent bg-[#93BFA9]">
+                      <img
+                        class="w-10 h-10 object-contain block"
+                        src="images/work_images/small/icon-2.png"
+                        alt="icon"
+                      />
+                      <div class="space-y-2">
+                        <h3 class="dark:text-white text-2xl font-semibold">
+                          Shopify Theme Development
+                        </h3>
+                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                          Customization of themes to fit your brand and business
+                          requirements.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="about-box dark:bg-transparent bg-[#93BFA9]">
+                      <img
+                        class="w-10 h-10 object-contain block"
+                        src="images/work_images/small/icon-1.png"
+                        alt="icon"
+                      />
+                      <div class="space-y-2">
+                        <h3 class="dark:text-white text-2xl font-semibold">
+                          Shopify App Development
+                        </h3>
+                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                          Adding functionality and features to your store
+                          through app creation.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="about-box dark:bg-transparent bg-[#93BFA9]">
+                      <img
+                        class="w-10 h-10 object-contain block"
+                        src="images/work_images/small/icon-3.png"
+                        alt="icon"
+                      />
+                      <div class="space-y-2">
+                        <h3 class="dark:text-white text-2xl font-semibold">
+                          Shopify Store Setup
+                        </h3>
+                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                          Initial configuration and setup to prepare for a
+                          successful store launch.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="about-box dark:bg-transparent bg-[#93BFA9]">
+                      <img
+                        class="w-10 h-10 object-contain block"
+                        src="images/work_images/small/icon-4.png"
+                        alt="icon"
+                      />
+                      <div class="space-y-2">
+                        <h3 class="dark:text-white text-2xl font-semibold">
+                          Shopify Store Customization
+                        </h3>
+                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                          Making your store unique and reflective of your brand.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="about-box dark:bg-transparent bg-[#93BFA9]">
+                      <img
+                        class="w-10 h-10 object-contain block"
+                        src="images/work_images/small/icon-5.png"
+                        alt="icon"
+                      />
+                      <div class="space-y-2">
+                        <h3 class="dark:text-white text-2xl font-semibold">
+                          Shopify Store Migration
+                        </h3>
+                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                          Transferring your store from another CMS platform to
+                          Shopify.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="about-box dark:bg-transparent bg-[#93BFA9]">
+                      <img
+                        class="w-10 h-10 object-contain block"
+                        src="images//work_images/small/icon-6.png"
+                        alt="icon"
+                      />
+                      <div class="space-y-2">
+                        <h3 class="dark:text-white text-2xl font-semibold">
+                          Shopify Store Speed Optimization
+                        </h3>
+                        <p class="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                          Ensuring fast and efficient loading of your store.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- what i do contain end -->
+                <div>
+                  <div
+                    class="bg-[#F8FBFB] dark:bg-[#0D0D0D] max-w-full h-auto py-10 rounded-xl"
+                  >
+                    <h3
+                      class="text-center dark:text-white text-6xl mb-3 font-semibold"
+                    >
+                      Clients
+                    </h3>
+                    <!-- slider and slider items start -->
+                    <div class="slickTwo px-2 pt-8">
+                      <div>
+                        <img
+                          class="overflow-hidden brand-img"
+                          src="images/about/client-2.png"
+                          alt="brand"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          class="overflow-hidden brand-img"
+                          src="images/about//client-1.png"
+                          alt="brand"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          class="overflow-hidden brand-img"
+                          src="images/about/client-3.png"
+                          alt="brand"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          class="overflow-hidden brand-img"
+                          src="images/about/client-4.jpg"
+                          alt="brand"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          class="overflow-hidden brand-img"
+                          src="images/about/client-5.png"
+                          alt="brand"
+                        />
+                      </div>
+                      <div>
+                        <img
+                          class="overflow-hidden brand-img"
+                          src="images/about/client-6.webp"
+                          alt="brand"
+                        />
+                      </div>
+                    </div>
+                    <!-- slider and slider items end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- about section end  -->
+
+          <!-- resume page contant start -->
+          <section
+            id="resume"
+            class="bg-white mb-8 lg:rounded-2xl dark:bg-[#111111]"
+          >
+            <div data-aos="fade" class="aos-init aos-animate">
+              <div class="container sm:px-5 md:px-10 lg:px-20">
+                <div class="py-12 px-4">
+                  <h2
+                    class="after-effect after:left-44 mb-[40px] mt-12 lg:mt-0"
+                  >
+                    Resume
+                  </h2>
+
+                                        <!-- Experience contain -->
+                                        <div class="flex items-center space-x-2 mb-4">
+                                          <i
+                                            class="fa-solid text-6xl text-[#F95054] fa-briefcase"
+                                          ></i>
+                                          <h4 class="text-5xl dark:text-white font-medium">
+                                            Experience
+                                          </h4>
+                                        </div>
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6"
+                  >
+
+                      <div
+                        class="py-4 dark:bg-transparent bg-[#eef5fa] pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2"
+                      >
+                        <span
+                          class="text-tiny text-gray-lite dark:text-[#b7b7b7]"
+                          >2017-Present</span
+                        >
+                        <h3 class="text-xl dark:text-white">
+                          Cr. Web Developer
+                        </h3>
+                        <p class="dark:text-[#b7b7b7]">
+                          Upwork
+                        </p>
+                      </div>
+
+                      <div
+                        class="py-4 dark:bg-transparent bg-[#f2f4ff] pl-5 pr-3 space-y-2 rounded-lg mb-6 dark:border-[#212425] dark:border-2"
+                      >
+                        <span
+                          class="text-tiny text-gray-lite dark:text-[#b7b7b7]"
+                          >2019-Present</span
+                        >
+                        <h3 class="text-xl dark:text-white">
+                          Cr. Web Developer
+                        </h3>
+                        <p class="dark:text-[#b7b7b7]">Fiverr</p>
+                      </div>
+                    </div>
+
+                    <div>
+                     
+
+              <!-- working skills -->
+              <div
+                class="container bg-[#f8fbfb] dark:bg-[#0D0D0D] py-12 px-4 sm:px-5 md:px-10 lg:px-20"
+              >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div class="col-span-1">
+                    <h4 class="text-5xl dark:text-white font-medium mb-6">
+                      Working Skills
+                    </h4>
+                    <div class="mb-5">
+                      <div class="flex justify-between mb-1">
+                        <span
+                          class="font-semibold text-[#526377] dark:text-[#A6A6A6]"
+                          >Theme Development</span
+                        >
+                        <span
+                          class="font-semibold text-[#526377] dark:text-[#A6A6A6"
+                          >95%</span
+                        >
+                      </div>
+                      <div
+                        class="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]"
+                      >
+                        <div
+                          class="bg-[#FF6464] h-1 rounded-full"
+                          style="width: 95%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="mb-5">
+                      <div class="flex justify-between mb-1">
+                        <span
+                          class="font-semibold text-[#526377] dark:text-[#A6A6A6]"
+                          >Shopify App Development</span
+                        >
+                        <span
+                          class="font-semibold text-[#526377] dark:text-[#A6A6A6"
+                          >75%</span
+                        >
+                      </div>
+                      <div
+                        class="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]"
+                      >
+                        <div
+                          class="bg-[#9272d4] h-1 rounded-full"
+                          style="width: 75%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="mb-5">
+                      <div class="flex justify-between mb-1">
+                        <span
+                          class="font-semibold text-[#526377] dark:text-[#A6A6A6]"
+                          >Store Speed Optimization</span
+                        >
+                        <span
+                          class="font-semibold text-[#526377] dark:text-[#A6A6A6"
+                          >90%</span
+                        >
+                      </div>
+                      <div
+                        class="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]"
+                      >
+                        <div
+                          class="bg-[#5185d4] h-1 rounded-full"
+                          style="width: 90%"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="mb-5">
+                      <div class="flex justify-between mb-1">
+                        <span
+                          class="font-semibold text-[#526377] dark:text-[#A6A6A6]"
+                          >Store Management</span
+                        >
+                        <span
+                          class="font-semibold text-[#526377] dark:text-[#A6A6A6"
+                          >95%</span
+                        >
+                      </div>
+                      <div
+                        class="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]"
+                      >
+                        <div
+                          class="bg-[#ca56f2] h-1 rounded-full"
+                          style="width: 95%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- button group -->
+                  <div class="col-span-1">
+                    <h4 class="text-5xl dark:text-white font-medium mb-8">
+                      Knowledges
+                    </h4>
+                    <div
+                      class="flex gap-x-3 gap-y-3 md:gap-y-6 md:gap-x-4 flex-wrap"
+                    >
+                      <button class="resume-btn">Liquid</button>
+                      <button class="resume-btn">HTML</button>
+                      <button class="resume-btn">CSS</button>
+                      <button class="resume-btn">Javascript</button>
+                      <button class="resume-btn">ES6+</button>
+                      <button class="resume-btn">Git</button>
+                      <button class="resume-btn">SCSS</button>
+                      <button class="resume-btn">Bootstrap</button>
+                      <button class="resume-btn">Tailwind</button>
+                      <button class="resume-btn">Photoshop</button>
+                      <button class="resume-btn">Illustrator</button>
+                    </div>
+                  </div>
+                  <!-- end button group -->
+                </div>
+              </div>
+              <!-- footer ends -->
+            </div>
+          </section>
+          <!-- resume page contant End -->
+
+          <!-- portfolio page contant start -->
+          <section
+            id="works"
+            class="bg-white mb-8 lg:rounded-2xl dark:bg-[#111111]"
+          >
+            <div class="container mb-8 px-4 sm:px-5 md:px-10 lg:px-[60px]">
+              <div class="py-12">
+                <h2 class="after-effect after:left-48 mt-12 lg:mt-0">
+                  Portfolio
+                </h2>
+
+                <!-- fillter group buttons -->
+                <ul
+                  class="button-group isotop-menu-wrapper mt-[30px] flex w-full justify-start md:justify-end flex-wrap font-medium"
+                >
+                  <li
+                    class="fillter-btn mr-4 md:mx-4 is-checked"
+                    data-filter="*"
+                  >
+                    All
+                  </li>
+                  <li class="fillter-btn mr-4 md:mx-4" data-filter=".dev">
+                    Speed Optimization
+                  </li>
+                  <li class="fillter-btn mr-4 md:mx-4" data-filter=".plugin">
+                    Web Design
+                  </li>
+                  <li class="fillter-btn mr-4 md:mx-4" data-filter=".branding">
+                    Migration to Shopify
+                  </li>
+                  <li class="fillter-btn mr-4 md:mx-4" data-filter=".custom">
+                    <!-- Graphic Design -->
+                  </li>
+                </ul>
+              </div>
+              <!-- End py-12 -->
+
+              <div
+                id="isotop-gallery-wrapper"
+                class="mymix portfolio_list-two three-col"
+              >
+                <div class="grid-sizer"></div>
+                <!-- portfolio items one start -->
+                <div class="portfolio_list-two-items isotop-item plugin">
+                  <div
+                    class="rounded-lg bg-[#fff0f0] p-6 dark:bg-transparent dark:border-[2px] border-[#212425]"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloOne" rel="modal:open">
+                        <img
+                          class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                          src="images/work_images/small/one.png"
+                          alt="portfolio image"
+                        />
+                      </a>
+                    </div>
+                    <span
+                      class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]"
+                      >March 2022 - Present</span
+                    >
+                    <h2
+                      class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2"
+                    >
+                      <a href="#portfiloOne" rel="modal:open"> Beauty & The Broth </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item one  -->
+                <div id="portfiloOne" class="modal-container modal">
+                  <div
+                    class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight"
+                  >
+                    <h2
+                      class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold"
+                    >
+                      Shopify Theme Optimization Project
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"
+                          ></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Website Maintenance</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-code text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Pages :&nbsp;
+                          <span class="font-medium">All Pages</span>
+                        </p>
+                      </div>
+
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-user text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Client :&nbsp; <span class="font-medium">Melissa Bolona</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Preview :&nbsp;
+                          <span
+                            class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]"
+                          >
+                            <a
+                              href="https://thebeautyandthebroth.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >thebeautyandthebroth</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p
+                      class="dark:text-white text-2line font-normal text-[15px] sm:text-sm"
+                    >
+                    Beauty & The Broth is a wellness brand run by Melissa Boloña, an American actress and model. 
+                    She had some issues with the subscription app she was using for her organic, subscription-based products,
+                    so we resolved the issue and proposed a better solution for maintaining her subscriptions. Additionally, 
+                    we helped her improve the performance of her website and gave it a new look. As a result, she has become 
+                    a permanent client and we work on an ongoing basis to maintain her website.
+
+                    </p>
+                    <div class="pr-3">
+                      <img
+                        class="w-full md:h-[autofill] h-auto object-cover rounded-xl mt-6"
+                        src="images/work_images/Best-Organic-Bone-Broth-Beauty-and-the-Broth.png"
+                        alt="portfolio image"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    href="#close-modal"
+                    rel="modal:close"
+                    class="close bg-close-light dark:bg-close-dark"
+                    >Close</a
+                  >
+                </div>
+
+                <!-- portfolio items two start -->
+                <div class="portfolio_list-two-items isotop-item dev">
+                  <div
+                    class="rounded-lg bg-[#fff3fc] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloTwo" rel="modal:open">
+                        <img
+                          class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                          src="images/work_images/sabo-speed.png"
+                          alt="portfolio image"
+                        />
+                      </a>
+                    </div>
+                    <span
+                      class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]"
+                      >Present</span
+                    >
+                    <h2
+                      class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2"
+                    >
+                      <a href="#portfiloTwo" rel="modal:open">Sabo Skirt</a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item two  -->
+                <div id="portfiloTwo" class="modal-container modal">
+                  <div
+                    class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight"
+                  >
+                    <h2
+                      class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold"
+                    >
+                      Shopify Plus Speed Otpimization Project
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"
+                          ></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Speed Optimization</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-code text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Pages :&nbsp;
+                          <span class="font-medium">Home, Collection, Products</span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-user text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Client :&nbsp; <span class="font-medium">George Kouzoukas</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Preview :&nbsp;
+                          <span
+                            class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]"
+                          >
+                            <a
+                              href="#"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >N/A</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p
+                      class="dark:text-white text-2line font-normal text-[15px] sm:text-sm"
+                    >
+                    Sabo Skirt is a Shopify Plus organization that approached us for assistance 
+                    with optimizing their website's loading time, updating the design of their 
+                    product pages, and creating a custom search bar. We were able to successfully 
+                    reduce their loading time by 2.2 seconds. The website is currently in progress 
+                    and will be live soon
+                    </p>
+                    <div class="pr-3">
+                      <br>
+                      <h2><b>Before</b></h2>
+                      <img
+                        class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6"
+                        src="images/work_images/small/sabo.png"
+                        alt="portfolio image"
+                      />
+                      <br>
+                      <h2><strong>After</strong></h2>
+                      <br>
+                      <video playsinline="" autoplay="" controls src="https://awevideo.s3.amazonaws.com/video-10260328-93741b4feeedb4bbcacb2118251279ad.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20230109%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20230109T211411Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=981b307f9c1a636b53fa1371f7ba181b713657e393b92af00eeb257c658dd9fc"></video>
+                    </div>
+                  </div>
+                  <a
+                    href="#close-modal"
+                    rel="modal:close"
+                    class="close bg-close-light dark:bg-close-dark"
+                    >Close</a
+                  >
+                </div>
+
+                <!-- portfolio items three start -->
+                <div class="portfolio_list-two-items isotop-item plugin">
+                  <div
+                    class="rounded-lg bg-[#fff3fc] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloThree" rel="modal:open">
+                        <img
+                          class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                          src="images/work_images/small/two.png"
+                          alt="portfolio image"
+                        />
+                      </a>
+                    </div>
+                    <span
+                      class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]"
+                      >March 2022</span
+                    >
+                    <h2
+                      class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2"
+                    >
+                      <a href="#portfiloThree" rel="modal:open">
+                        Sea Balance
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item three start -->
+                <div id="portfiloThree" class="modal-container modal">
+                  <div
+                    class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight"
+                  >
+                    <h2
+                      class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold"
+                    >
+                      Bug Fixing & Theme Customization Project
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"
+                          ></i>
+                          Project :&nbsp;
+                          <span class="font-medium">Website UI optimization</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-code text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Pages :&nbsp;
+                          <span class="font-medium">Complete theme </span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-user text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Client :&nbsp; <span class="font-medium">Benita</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Preview :&nbsp;
+                          <span
+                            class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]"
+                          >
+                            <a
+                              href="https://sea-balance.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >www.sea-balance.com</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p
+                      class="dark:text-white text-2line font-normal text-[15px] sm:text-sm"
+                    >
+                    Sea Balance is a wellness brand owned and operated by NATARA RICE. 
+                    Benita, the owner of agency Expresslancer, approached us to resolve issues 
+                    with the website's responsiveness and cross-browser compatibility. We were able 
+                    to fully optimize the site for all devices and ensure compatibility across all browsers. 
+                    In addition, we created custom sections, pages, and a custom discount indicator
+                    </p>
+                    <div class="pr-3">
+                      <img
+                        class="w-full md:h-[auto] h-auto object-cover rounded-xl mt-6"
+                        src="images/work_images/Sea-Balance-it-starts-from-the-inside.png"
+                        alt="portfolio image"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    href="#close-modal"
+                    rel="modal:close"
+                    class="close bg-close-light dark:bg-close-dark"
+                    >Close</a
+                  >
+                </div>
+
+                <!-- portfolio items four start -->
+                <div class="portfolio_list-two-items isotop-item dev">
+                  <div
+                    class="rounded-lg p-6 bg-[#e9faff] dark:bg-transparent dark:border-[2px] border-[#212425]"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloFour" rel="modal:open">
+                        <img
+                          class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                          src="images/work_images/small/wowbao.png"
+                          alt="portfolio image"
+                        />
+                      </a>
+                    </div>
+                    <span
+                      class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]"
+                      >23 Sept, 2022</span
+                    >
+                    <h2
+                      class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2"
+                    >
+                      <a href="#portfiloFour" rel="modal:open"
+                        >WowBao by Crown N & B
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item one start -->
+                <div id="portfiloFour" class="modal-container modal">
+                  <div
+                    class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight"
+                  >
+                    <h2
+                      class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold"
+                    >
+                      Speed Optimization Project
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"
+                          ></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Speed Optimization </span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-code text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Pages :&nbsp;
+                          <span class="font-medium">Home, Collection, Product</span>
+                        </p>
+                      </div>
+
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-user text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Client :&nbsp; <span class="font-medium">Mark Harrop</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Preview :&nbsp;
+                          <span
+                            class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]"
+                          >
+                            <a
+                              href="https://www.wowbaonails.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >www.wowbaonails.com</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p
+                      class="dark:text-white text-2line font-normal text-[15px] sm:text-sm"
+                    >
+                    WowBao Nail is a popular nail paint brand with a large community of over 5,600 members. 
+                    When Mark approached us, he had two main concerns: the slow loading speed of the website 
+                    and issues with Google Shopping and Trustpilot reviews integration. The website was taking 
+                    over more than 10 seconds to load and had a PSI of only 14 on mobile devices.
+                   <img src="images/work_images/before-wowbao.png">
+                    We were able to significantly improve the performance and speed of the website. 
+                    The loading time is now between 2-4 seconds, and the PSI is 
+                    a impressive 70+ on mobile devices and 99 on desktop devices. In addition to optimizing
+                     the speed, we also successfully resolved the issues with Google Shopping and Trustpilot 
+                     reviews integration. As a result, the website is now faster and more functional for our users
+                    </p>
+                    <div class="pr-3">
+                      <img
+                        class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6"
+                        src="images/work_images/small/wowbao.png"
+                        alt="portfolio image"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    href="#close-modal"
+                    rel="modal:close"
+                    class="close bg-close-light dark:bg-close-dark"
+                    >Close</a
+                  >
+                </div>
+
+                <!-- modal start for item five start -->
+                <div class="portfolio_list-two-items isotop-item branding">
+                  <div
+                    class="rounded-lg bg-[#fffae9] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloFive" rel="modal:open">
+                        <img
+                          class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                          src="images/work_images/small/buyaquaich-com.png"                          alt="portfolio image"
+                        />
+                      </a>
+                    </div>
+                    <span
+                      class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]"
+                      >Feb, 2020</span
+                    >
+                    <h2
+                      class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2"
+                    >
+                      <a href="#portfiloFive" rel="modal:open">Buy a Quaich & Tankard</a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item five start -->
+                <div id="portfiloFive" class="modal-container modal">
+                  <div
+                    class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight"
+                  >
+                    <h2
+                      class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold"
+                    >
+                     Migration & Custom Theme Development Project
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"
+                          ></i>
+                          Project :&nbsp;
+                          <span class="font-medium">Magento to Shopify Migration</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-code text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Pages :&nbsp;
+                          <span class="font-medium">All Pages</span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-user text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Client :&nbsp; <span class="font-medium">Fatima</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Preview :&nbsp;
+                          <span
+                            class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]"
+                          >
+                            <a
+                              href="https://buyaquaich.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >www.buyaquaich.com</a
+                            >
+                            <a
+                            href="https://buyatankard.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >www.buyatankard.com</a
+                          >
+                            
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p
+                      class="dark:text-white text-2line font-normal text-[15px] sm:text-sm"
+                    >
+                    BuyAquaich.com & Buyatankard.com are unique online retailers specializing in Quaichs & Tankards. 
+                    They offer one of the largest selections of handmade Quaichs & Tankards. 
+                    We assisted them in the process of migrating their stores from Magento to Shopify.
+                    </p>
+                    <div class="pr-3">
+                      <img
+                        class="w-full md:h-[auto] h-auto object-cover rounded-xl mt-6"
+                        src="images/work_images/Buy-a-Tankard.png"
+                        alt="portfolio image"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    href="#close-modal"
+                    rel="modal:close"
+                    class="close bg-close-light dark:bg-close-dark"
+                    >Close</a
+                  >
+                </div>
+
+                <!-- portfolio items Six start -->
+                <div class="portfolio_list-two-items isotop-item branding">
+                  <div
+                    class="rounded-lg bg-[#f4f4ff] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloSix" rel="modal:open">
+                        <img
+                          class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                          src="images/work_images/small/Naturplan-A-Z.png"
+                          alt="portfolio image"
+                        />
+                      </a>
+                    </div>
+                    <span
+                      class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]"
+                      >April, 2021</span
+                    >
+                    <h2
+                      class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2"
+                    >
+                      <a href="#portfiloSix" rel="modal:open">
+                       Get A Vegan
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item six start -->
+                <div id="portfiloSix" class="modal-container modal">
+                  <div
+                    class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight"
+                  >
+                    <h2
+                      class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold"
+                    >
+                      Migration From Wordpress to Shopify Project
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"
+                          ></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Migration From Wordpress to Shopify</span>
+                        </p>
+
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-code text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Pages :&nbsp;
+                          <span class="font-medium">All Pages</span>
+                        </p>
+                      </div>
+
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-user text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Client :&nbsp; <span class="font-medium">Marina1502</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Preview :&nbsp;
+                          <span
+                            class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]"
+                          >
+                            <a
+                              href="https://get-vegan-naturplan.myshopify.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >www.get-vegan.com</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p
+                      class="dark:text-white text-2line font-normal text-[15px] sm:text-sm"
+                    >
+                    http://www.naturplan-a-z.de/ A-Z is a health company that is dedicated to strengthening immunity. 
+                    To support this mission, they utilize WordPress to power their primary website. 
+                    We were proud to help the company with their branding and support the migration of 
+                    their shop from Woocommerce to Shopify. Specifically, we provided our expertise and 
+                    guidance at each step of the process, making sure to ensure a seamless, successful 
+                    migration. We also integrated carefully considered branding elements to complete the project.
+                    </p>
+                    <div class="pr-3">
+                      <img
+                        class="w-full md:h-[auto] h-auto object-cover rounded-xl mt-6"
+                        src="images/work_images/Vegane0full.png"
+                        alt="portfolio image"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    href="#close-modal"
+                    rel="modal:close"
+                    class="close bg-close-light dark:bg-close-dark"
+                    >Close</a
+                  >
+                </div>
+
+                <!-- modal start for item Seven start -->
+                <div class="portfolio_list-two-items isotop-item plugin">
+                  <div
+                    class="rounded-lg bg-[#f4f4ff] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloSeven" rel="modal:open">
+                        <img
+                          class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                          src="images/work_images/small/wild-custoM.png"
+                          alt="portfolio image"
+                        />
+                      </a>
+                    </div>
+                    <span
+                      class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]"
+                      >May 2020</span
+                    >
+                    <h2
+                      class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2"
+                    >
+                      <a href="#portfiloSeven" rel="modal:open">Wild Custom Apparel</a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item Seven start -->
+                <div id="portfiloSeven" class="modal-container modal">
+                  <div
+                    class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight"
+                  >
+                    <h2
+                      class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold"
+                    >
+                      UI/UX Project
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"
+                          ></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Shopify Custom Theme Development</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-code text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Pages :&nbsp;
+                          <span class="font-medium">Complete Theme</span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-user text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Client :&nbsp; <span class="font-medium">Al anany</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Preview :&nbsp;
+                          <span
+                            class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]"
+                          >
+                            <a
+                              href="http://www.wildcustomapparel.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >wildcustomapparel.com</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p
+                      class="dark:text-white text-2line font-normal text-[15px] sm:text-sm"
+                    >
+                    The Wild Custom Apparel website was designed to sell custom T-shirts, 
+                    hoodies, and other clothing. I developed a one-of-a-kind theme that closely resembled Wild Bobby,
+                     as per the client's requests.
+                    </p>
+                    <div class="pr-3">
+                      <img
+                        class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6"
+                        src="images/work_images/404.png"
+                        alt="portfolio image"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    href="#close-modal"
+                    rel="modal:close"
+                    class="close bg-close-light dark:bg-close-dark"
+                    >Close</a
+                  >
+                </div>
+
+                <!-- portfolio items Eight start -->
+                <div class="portfolio_list-two-items isotop-item dev">
+                  <div
+                    class="rounded-lg bg-[#f4f4ff] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloEight" rel="modal:open">
+                        <img
+                          class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                          src="images/work_images/small/Speed Portfolio-2.png"
+                          alt="portfolio image"
+                        />
+                      </a>
+                    </div>
+                    <span
+                      class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]"
+                      >30th July, 2021</span
+                    >
+                    <h2
+                      class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2"
+                    >
+                      <a href="#portfiloEight" rel="modal:open"> Perfect Art Lights </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item Eight start -->
+                <div id="portfiloEight" class="modal-container modal">
+                  <div
+                    class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight"
+                  >
+                    <h2
+                      class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold"
+                    >
+                    Speed Optimization Project
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"
+                          ></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Speed Optimization</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-code text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Pages  :&nbsp;
+                          <span class="font-medium">Home, Collection, Product</span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-user text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Client :&nbsp; <span class="font-medium">Bart Watkins, Method Lights</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Preview :&nbsp;
+                          <span
+                            class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]"
+                          >
+                            <a
+                              href="https://perfectartlights.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >www.perfectartlights.com</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p
+                      class="dark:text-white text-2line font-normal text-[15px] sm:text-sm"
+                    >
+                    At Perfect Art Lights, we noticed that our website, built on PageFly, 
+                    was experiencing slow loading times. To address this issue, we took steps to 
+                    optimize the performance and speed of the website while preserving the excellent user experience. 
+                    Specifically, we cleaned up unnecessary JavaScript files, organized our CSS by page, 
+                    optimized the performance of our YouTube iframes and apps, and eliminated errors and warnings that
+                    could potentially slow down the website. These efforts have resulted in a faster and more efficient 
+                    website for our visitors.
+                    </p>
+                    <div class="pr-3">
+                      <img
+                        class="w-full md:h-auto h-auto object-cover rounded-xl mt-6"
+                        src="images/work_images/Speed Portfolio-1.png"
+                        alt="portfolio image"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    href="#close-modal"
+                    rel="modal:close"
+                    class="close bg-close-light dark:bg-close-dark"
+                    >Close</a
+                  >
+                </div>
+
+                <!-- portfolio items Nine start -->
+                <div class="portfolio_list-two-items isotop-item plugin">
+                  <div
+                    class="rounded-lg bg-[#fff0f8] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloNine" rel="modal:open">
+                        <img
+                          class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
+                          src="images/work_images/small/port2.png"
+                          alt="portfolio image"
+                        />
+                      </a>
+                    </div>
+                    <span
+                      class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]"
+                      >2019</span
+                    >
+                    <h2
+                      class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2"
+                    >
+                      <a href="#portfiloNine" rel="modal:open">Masion De More </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item Nine start -->
+                <div id="portfiloNine" class="modal-container modal">
+                  <div
+                    class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight"
+                  >
+                    <h2
+                      class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold"
+                    >
+                      Course Project
+                    </h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"
+                          ></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Shopify Theme Customization & Setup </span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-code text-lg mr-2 hidden sm:block"
+                          ></i>
+                         Theme :&nbsp;
+                          <span class="font-medium">Prestige (Custom Theme)</span>
+                        </p>
+                      </div>
+
+                      <div class="space-y-2">
+                        <p
+                          class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-regular fa-user text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Client :&nbsp; <span class="font-medium">N/A</span>
+                        </p>
+                        <p
+                          class="dark:text-white flex items-center text-[15px] sm:text-lg"
+                        >
+                          <i
+                            class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"
+                          ></i>
+                          Preview :&nbsp;
+                          <span
+                            class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]"
+                          >
+                            <a
+                              href="https://maison-de-more.myshopify.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >maison-de-more.myshopify</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p
+                      class="dark:text-white text-2line font-normal text-[15px] sm:text-sm"
+                    >
+                    The Maison De More website is a custom-made project for the fashion industry niche, 
+                    built as a part of a course assignment. I tailored the website to be visually stunning, 
+                    easy to navigate, optimized for search engines and mobile devices, as well as easy to update 
+                    and maintain. With a focus on functionality, design, and SEO. The website is a comprehensive 
+                    online presence that effectively represents the fashion industry
+                    </p>
+                    <div class="pr-3">
+                      <img
+                        class="w-full md:h-[auto] h-auto object-cover rounded-xl mt-6"
+                        src="images/work_images/Maison-de-more.png"
+                        alt="portfolio image"
+                      />
+                    </div>
+                  </div>
+                  <a
+                    href="#close-modal"
+                    rel="modal:close"
+                    class="close bg-close-light dark:bg-close-dark"
+                    >Close</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- portfolio ends  -->
+
+          <!-- blog   section start -->
+          <section
+            id="blog"
+            class="bg-white mb-8 lg:rounded-2xl dark:bg-[#111111]"
+          >
+            <div class="container px-4 sm:px-5 md:px-10 lg:px-[60px]">
+              <div class="py-12">
+                <h2 class="after-effect after:left-32 mt-12 lg:mt-0">Blogs</h2>
+                <div
+                  class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-[30px] grid gap-x-10 gap-y-7 mb-6"
+                >
+                  <!-- blog items one start -->
+
+                  <div
+                    class="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#ex1" rel="modal:open">
+                        <img
+                          class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                          src="images/blog_images/small/soon-2.png"
+                          alt="blog image"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]"
+                    >
+                      <span>2023</span>
+                      <span class="dot-icon">Best Practices</span>
+                    </div>
+                    <h3
+                      class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]"
+                    >
+                      <a href="#ex1" rel="modal:open"
+                        >Coming Soon....</a
+                      >
+                    </h3>
+                  </div>
+                  <!-- blog items one end -->
+
+                  <!-- blog items two start -->
+                  <div
+                    class="p-5 rounded-lg mb-2 h-full bg-[#eefbff] dark:bg-transparent dark:border-[#212425] dark:border-2"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#ex2" rel="modal:open">
+                        <img
+                          class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                          src="images/blog_images/small/soon-2.png"
+                          alt="blog image"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]"
+                    >
+                      <span>2023</span>
+                      <span class="dot-icon">Speed Optimization</span>
+                    </div>
+                    <h3
+                      class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]"
+                    >
+                      <a href="#ex2" rel="modal:open">
+                        Coming Soon....
+                      </a>
+                    </h3>
+                  </div>
+                  <!-- blog items two end  -->
+
+                  <!-- blog items three start -->
+                  <div
+                    class="p-5 rounded-lg mb-2 h-full dark:border-[#212425] dark:border-2 bg-[#fcf4ff] dark:bg-transparent"
+                  >
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#ex3" rel="modal:open">
+                        <img
+                          class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
+                          src="images/blog_images/small/soon-2.png"
+                          alt="blog image"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]"
+                    >
+                      <span>2023</span>
+                      <span class="dot-icon">Web Design</span>
+                    </div>
+                    <h3
+                      class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]"
+                    >
+                      <a href="#ex3" rel="modal:open"
+                        >Coming Soon....</a
+                      >
+                    </h3>
+                  </div>
+                  <!-- blog items three end -->     
+                </div>
+              </div>
+            </div>
+            <!-- blog section start -->
+          </section>
+
+          <!-- contactsection start -->
+          <section id="contact" class="bg-white lg:rounded-2xl dark:bg-[#111111]">
+            <div data-aos="fade" class="aos-init aos-animate">
+              <div class="container px-4 sm:px-5 md:px-10 lg:px-20">
+                <div class="py-12">
+                  <h2
+                    class="after-effect after:left-40 mb-[40px] mt-12 lg:mt-0"
+                  >
+                    Contact
+                  </h2>
+                  <div class="lg:flex gap-x-20">
+                    <!-- personal contact information -->
+                    <div class="w-full lg:w-[40%] xl:w-[30%] space-y-6">
+                      <div
+                        class="flex flex-wrap dark:bg-transparent bg-[#70A9A1] p-[30px] dark:border-[#212425] dark:border-2 gap-2 rounded-xl"
+                      >
+                        <span class="w-8 mt-2">
+                          <img
+                            src="images/contact/email.png"
+                            alt="icon"
+                            class="text-4xl dark:text-white"
+                          />
+                        </span>
+                        <div class="space-y-2">
+                          <p class="text-xl font-semibold dark:text-white">
+                            Email :
+                          </p>
+                          <p class="text-gray-lite text-lg dark:text-[#A6A6A6]">
+                            contact@rabiatariq.tech
+                          </p>
+                          <p class="text-gray-lite text-lg dark:text-[#A6A6A6]">
+                            rabia234t@gmail.com
+                          </p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="flex flex-wrap dark:bg-transparent bg-[#CFD7C7] p-[30px] dark:border-[#212425] dark:border-2 gap-2 rounded-xl"
+                      >
+                        <span class="w-8 mt-2">
+                          <img
+                            src="images/contact/map.png"
+                            alt="icon"
+                            class="text-4xl dark:text-white"
+                          />
+                        </span>
+                        <div class="space-y-2">
+                          <p class="text-xl font-semibold dark:text-white">
+                            Address :
+                          </p>
+                          <p class="text-gray-lite text-lg dark:text-[#A6A6A6]">
+                            Punjab, Pakistan
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="w-full mt-8 lg:mt-0 lg:w-[60%] xl:w-[70%]">
+                      <div
+                        data-aos="fade"
+                        class="dark:border-[#212425] dark:border-2 mb-16 md:p-[48px] p-4 bg-color-810 rounded-xl dark:bg-[#111111] mb-[30px] md:mb-[60px] aos-init aos-animate"
+                      >
+                        <h3 class="text-4xl">
+                          <span class="text-gray-lite dark:text-[#A6A6A6]"
+                            >I'm always open to discussing product</span
+                          >
+                          <br />
+                          <span class="font-semibold dark:text-white"
+                            >design work or partnerships.</span
+                          >
+                        </h3>
+
+                        <form
+                          id="myForm"
+                          action="https://formspree.io/f/mayzyoaa"
+                          method="POST"
+                        >
+                          <!-- name input -->
+                          <div class="relative z-0 w-full mt-[40px] mb-8 group">
+                            <input
+                              type="text"
+                              id="name"
+                              name="name"
+                              class="block autofill:bg-transparent py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#FF6464] peer"
+                              placeholder=" "
+                              required=""
+                            />
+                            <label
+                              for="name"
+                              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-color-910 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#FF6464] peer-focus:dark:text-[#FF6464] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
+                              >Name *</label
+                            >
+                          </div>
+
+                          <!-- email input  -->
+                          <div class="relative z-0 w-full mb-8 group">
+                            <input
+                              type="email"
+                              name="user_email"
+                              class="block autofill:text-red-900 needed py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#5185D4] peer"
+                              placeholder=" "
+                              id="user_email"
+                              required=""
+                            />
+                            <label
+                              for="user_email"
+                              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-color-910 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#5185D4] peer-focus:dark:text-[#FF6464] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
+                              >Email *</label
+                            >
+                          </div>
+
+                          <!-- massage input -->
+                          <div class="relative z-0 w-full mb-8 group">
+                            <input
+                              type="text"
+                              name="message"
+                              class="block autofill:bg-yellow-200 py-2.5 px-0 w-full text-sm text-gray-lite bg-transparent border-0 border-b-[2px] border-[#B5B5B5] appearance-none dark:text-white dark:border-[#333333] dark:focus:border-[#FF6464] focus:outline-none focus:ring-0 focus:border-[#CA56F2] peer"
+                              placeholder=" "
+                              id="message"
+                              required=""
+                            />
+                            <label
+                              for="message"
+                              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-color-910 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-[#CA56F2] peer-focus:dark:text-[#FF6464] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-8"
+                              >Message *</label
+                            >
+                          </div>
+
+                          <div
+                            class="transition-all duration-300 ease-in-out inline-block hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-lg mt-3"
+                          >
+                            <!-- submit buttons -->
+                            <input
+                              type="submit"
+                              class="transition ease-in duration-200 font-semibold cursor-pointer border-color-910 hover:border-transparent px-6 py-2 rounded-lg border-[2px] hover:text-white dark:text-white"
+                              value="Submit"
+                            />
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- footer  start-->
+              <footer
+                class="overflow-hidden bg-[#f8fbfb] dark:bg-[#212425] rounded-b-2xl"
+              ></footer>
+              <!-- footer ends -->
+            </div>
+          </section>
+          <!-- contact section end -->
+        </div>
+      </div>
+    </div>
+    <!--==== js =====-->
+    <script src="js/vendor/jquary.min.js"></script>
+    <script src="js/vendor/slick.js"></script>
+    <script src="js/vendor/jquery.modal.min.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  </body>
+</html>
